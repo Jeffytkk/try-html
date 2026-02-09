@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Data Attribute Example</title>
+  </head>
+  <body>
+    <div id="product" data-product-id="12345" data-price="29.99">
+      Product Details
+    </div>
+
+    <script>
+      // ส่วนนี้คือ JavaScript (จะเรียนละเอียดในบทหลังๆ)
+      // มันจะทำหน้าที่ไปดึงข้อมูลที่เรา "ฝากไว้" ใน data-* ออกมาโชว์
+      const productDiv = document.getElementById("product");
+      const productId = productDiv.dataset.productId;
+      const productPrice = productDiv.dataset.price;
+
+      console.log("Product ID:", productId);
+      console.log("Product Price:", productPrice);
+    </script>
+  </body>
+</html>
